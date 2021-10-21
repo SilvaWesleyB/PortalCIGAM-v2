@@ -424,7 +424,8 @@
     <script src="<?= base_url('dist/plugins/jquery-mousewheel/jquery.mousewheel.js'); ?>"></script>
     <script src="<?= base_url('dist/plugins/raphael/raphael.min.js'); ?>"></script>
     <script src="<?= base_url('dist/plugins/jquery-mapael/jquery.mapael.min.js'); ?>"></script>
-    <script src="<?= base_url('dist/plugins/jquery-mapael/maps/usa_states.min.js'); ?>"></script>
+    
+    <script src="<?= base_url('dist/js/function.min.js'); ?>"></script>
 
 </body>
 

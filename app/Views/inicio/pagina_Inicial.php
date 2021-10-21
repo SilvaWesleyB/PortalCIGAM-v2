@@ -524,16 +524,6 @@
         </div>
     </div>
 </div>
-<script>
-    $(function() {
-        $("#tbTask").DataTable({
-            "responsive": true,
-            "lengthChange": false,
-            "autoWidth": false,
-            "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-        }).buttons().container().appendTo('#tbTask_wrapper .col-md-6:eq(0)');
-    });
-</script>
 <!--
 <div class="card">
     <div class="card-header">
