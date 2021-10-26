@@ -6,6 +6,6 @@ class Inicial extends BaseController
 {
     public function index()
     {
-        return view('inicio/pagina_inicial');
+        return view('inicio/home');
     }
 }

@@ -32,14 +32,14 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
+        'hostname' => '',
         'username' => '',
         'password' => '',
         'database' => '',
-        'DBDriver' => 'MySQLi',
+        'DBDriver' => '',
         'DBPrefix' => '',
-        'pConnect' => false,
-        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'pConnect' => true,
+        'DBDebug'  => true,
         'charset'  => 'utf8',
         'DBCollat' => 'utf8_general_ci',
         'swapPre'  => '',
@@ -47,7 +47,13 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'title_page' => 'PORTAL CIGAM',
+        'title_descricao' => 'Portal de controle de gestão comercial, serviços, suprimentos e resultados para a empresa.',
+        'name_page' => 'PORTAL CIGAM',
+        'signature_page' => 'Central de Serviços | CIGAM IC',
+        'fone_page' => '(67)3342.5200',
+        'url_page' => 'http://suporte.cigamic.com.br/',
+        'suporte' => 'https://get.teamviewer.com/cigamic'
     ];
 
     /**

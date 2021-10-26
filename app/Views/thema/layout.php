@@ -419,14 +419,12 @@
     <script src="<?= base_url('dist/plugins/datatables-buttons/js/buttons.print.min.js'); ?>"></script>
     <script src="<?= base_url('dist/plugins/datatables-buttons/js/buttons.colVis.min.js'); ?>"></script>
     <!-- AdminLTE App -->
+    <script src="<?= base_url('dist/js/function.min.js'); ?>"></script>
     <script type="text/javascript" src="<?= base_url('dist/js/tema.min.js'); ?>"></script>
     <!-- jQuery Mapael -->
     <script src="<?= base_url('dist/plugins/jquery-mousewheel/jquery.mousewheel.js'); ?>"></script>
     <script src="<?= base_url('dist/plugins/raphael/raphael.min.js'); ?>"></script>
     <script src="<?= base_url('dist/plugins/jquery-mapael/jquery.mapael.min.js'); ?>"></script>
-    
-    <script src="<?= base_url('dist/js/function.min.js'); ?>"></script>
-
 </body>
 
 </html>
