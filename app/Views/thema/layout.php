@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="<?= base_url('dist/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('dist/plugins/datatables-responsive/css/responsive.bootstrap4.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('dist/plugins/datatables-buttons/css/buttons.bootstrap4.min.css'); ?>">
-
+    <link rel="stylesheet" href="<?= base_url('dist/css/bootstrap.min.css'); ?>">
     <!-- Theme style -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('dist/css/tema.min.css'); ?>">
 
@@ -416,15 +416,17 @@
     <script src="<?= base_url('dist/plugins/datatables-buttons/js/dataTables.buttons.min.js'); ?>"></script>
     <script src="<?= base_url('dist/plugins/datatables-buttons/js/buttons.bootstrap4.min.js'); ?>"></script>
     <script src="<?= base_url('dist/plugins/datatables-buttons/js/buttons.html5.min.js'); ?>"></script>
+    <script src="<?= base_url('dist/plugins/datatables-buttons/js/jszip.min.js'); ?>"></script>
     <script src="<?= base_url('dist/plugins/datatables-buttons/js/buttons.print.min.js'); ?>"></script>
-    <script src="<?= base_url('dist/plugins/datatables-buttons/js/buttons.colVis.min.js'); ?>"></script>
+    <script src="<?= base_url('dist/plugins/datatables-buttons/js/pdfmake.min.js'); ?>"></script>
+    <script src="<?= base_url('dist/plugins/datatables-buttons/js/vfs_fonts.js'); ?>"></script>
     <!-- AdminLTE App -->
-    <script src="<?= base_url('dist/js/function.min.js'); ?>"></script>
     <script type="text/javascript" src="<?= base_url('dist/js/tema.min.js'); ?>"></script>
     <!-- jQuery Mapael -->
     <script src="<?= base_url('dist/plugins/jquery-mousewheel/jquery.mousewheel.js'); ?>"></script>
     <script src="<?= base_url('dist/plugins/raphael/raphael.min.js'); ?>"></script>
     <script src="<?= base_url('dist/plugins/jquery-mapael/jquery.mapael.min.js'); ?>"></script>
+    <script src="<?= base_url('dist/js/function.min.js'); ?>"></script>
 </body>
 
 </html>

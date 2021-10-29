@@ -95,33 +95,59 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
-            <div class="card-header">
-                <h2 class="card-title"><i class="fas fa-th-list"></i> Lista de Usuários</h2>
+            <div class="card-header d-flex">
+                <h2 class="card-title mr-auto">
+                    <i class="fas fa-th-list"></i>
+                    Lista de Chamados
+                </h2>
+
+                <div class="actions pull-right botoes">
+                    <div class="dropdown">
+                        <button class="btn btn-danger dropdown-toggle " type="button" id="menuBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-print"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuBtn" id="opcoes">
+                            <div class="dropdown-item">
+                                <a class="tool-action" href="javascript:;" data-action="0"><i class="fas fa-print"></i> Imprimir</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="tool-action" href="javascript:;" data-action="1"><i class="fas fa-file-pdf"></i> PDF</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="tool-action" href="javascript:;" data-action="2"><i class="fas fa-file-excel"></i> Excel</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="tool-action" href="javascript:;" data-action="3"><i class="fas fa-file-csv"></i> CSV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- /.card-header -->
+
             <div class="card-body">
-                <table id="tbUsers" class="table table-hover table-bordered table-striped compact display" width="100%">
+                <table id="tbChamados" class="table table-hover table-bordered table-striped compact display" width="100%">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>USUÁRIO</th>
-                            <th>NOME</th>
-                            <th>EMAIL</th>
-                            <th>ACESSO</th>
-                            <th>EMPRESA</th>
-                            <th>CONTATO</th>
-                            <th>EMAIL</th>
-                            <th>UN. DE NEGOCIO</th>
+                            <th></th>
+                            <th>SLA</th>
+                            <th>Status</th>
+                            <th>N° OS</th>
+                            <th>ABERTURA</th>
+                            <th>CLIENTE</th>
+                            <th>TIPO</th>
+                            <th>SERVIÇO</th>
+                            <th>ERUIPE</th>
+                            <th>ANALISTA</th>
                             <th></th>
                         </tr>
                     </thead>
                 </table>
             </div>
-            <!-- /.card-body -->
         </div>
     </div>
+    <!-- Tabela Listagem Ususários -->
 
-    <!-- Modal para editar/Inserir User-->
+    <!-- Modal para ver/editar/Inserir Chamados-->
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -191,7 +217,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Modal para editar/Inserir User-->
 </div>
 <!--
 <div class="card">

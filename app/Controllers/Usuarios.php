@@ -7,15 +7,32 @@ use App\Models\Usuarios_Model;
 
 class Usuarios extends BaseController
 {
-    public function listaUser()
+
+    public function __construct()
     {
         // Carrega Model/Conexão com BD
-        $users = new Usuarios_Model();
+        $this->users = new Usuarios_Model();
+        $this->request = \Config\Services::request();
+    }
 
+    public function index()
+    {
+        return view('usuario/usuario_lista');
+    }
+
+
+    public function listaUser()
+    {
+        $inicio  = $this->request->getPost('start');
+        $total  = $this->request->getPost('length');
+        $colunas = $this->request->getPost('columns'); // pega as colunas da tabela
+        $order   = $this->request->getPost('order'); // pega qual campo vai ser ordenado
+        $campo   = $colunas[$order[0]['column']]['data']; // pega o nome do campo que sera ordenado
+        $ordern   = $order[0]['dir']; // diz se é ASC ou DESC
+       
         // Lista os usuários
-        $dados = $users->listar();
-
-        // Envia em forma de json
+        $dados = $this->users->listar($inicio, $total, $campo, $ordern);
+           // Envia em forma de json
         echo json_encode($dados);
     }
 
