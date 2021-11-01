@@ -25,14 +25,15 @@ class Usuarios extends BaseController
     {
         $inicio  = $this->request->getPost('start');
         $total  = $this->request->getPost('length');
+        $buscar  = $this->request->getPost('search');
         $colunas = $this->request->getPost('columns'); // pega as colunas da tabela
         $order   = $this->request->getPost('order'); // pega qual campo vai ser ordenado
         $campo   = $colunas[$order[0]['column']]['data']; // pega o nome do campo que sera ordenado
         $ordern   = $order[0]['dir']; // diz se é ASC ou DESC
        
         // Lista os usuários
-        $dados = $this->users->listar($inicio, $total, $campo, $ordern);
-           // Envia em forma de json
+        $dados = $this->users->listar($inicio, $total, $buscar['value'], $campo, $ordern);
+        // Envia em forma de json
         echo json_encode($dados);
     }
 
